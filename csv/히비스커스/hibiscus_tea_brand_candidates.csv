@@ -1,0 +1,82 @@
+﻿brand_candidate,mention_count,post_count,matched_keywords,mapping_type
+티타임,44,44,티타임,direct_brand_match
+스타벅스,40,40,스타벅스,direct_brand_match
+다란,34,34,다란,direct_brand_match
+티랑,26,26,티랑,direct_brand_match
+테스,25,25,테스,direct_brand_match
+오설록,26,24,"OSULLOC, osulloc, 오설록",direct_brand_match
+루트,21,21,루트,direct_brand_match
+공차,13,13,공차,direct_brand_match
+바라기,8,8,바라기,direct_brand_match
+투썸플레이스,10,7,"투썸, 투썸플레이스",direct_brand_match
+이디야,7,7,이디야,direct_brand_match
+라바,7,7,라바,direct_brand_match
+웰빙,7,7,웰빙,direct_brand_match
+아마드티,9,5,"Ahmad, Ahmad Tea, ahmad, ahmad tea, 아마드티",direct_brand_match
+립톤,5,5,립톤,direct_brand_match
+인차,5,5,인차,direct_brand_match
+빅토리아,5,5,빅토리아,direct_brand_match
+쌍계명차,8,4,"쌍계, 쌍계명차",direct_brand_match
+다정헌,4,4,다정헌,direct_brand_match
+쿠우쿠우,4,4,쿠우쿠우,direct_brand_match
+타바론,4,3,"Tavalon, tavalon, 타바론",direct_brand_match
+곰곰,3,3,곰곰,direct_brand_match
+숲으로,3,3,숲으로,direct_brand_match
+아일레스,3,3,아일레스,direct_brand_match
+이레,3,3,이레,direct_brand_match
+트와이닝,3,3,트와이닝,direct_brand_match
+티젠,3,3,티젠,direct_brand_match
+로얄오차드,2,2,로얄오차드,direct_brand_match
+산그리메,2,2,산그리메,direct_brand_match
+순수한집,2,2,순수한집,direct_brand_match
+목향,2,2,목향,direct_brand_match
+자연애,2,2,자연애,direct_brand_match
+청년농원,2,2,청년농원,direct_brand_match
+제임스티스푼,2,2,제임스티스푼,direct_brand_match
+노브랜드,2,2,노브랜드,direct_brand_match
+렌테,2,2,렌테,direct_brand_match
+로네펠트,2,2,로네펠트,direct_brand_match
+포트넘앤메이슨,4,1,"Fortnum, Fortnum & Mason, fortnum, fortnum & mason",direct_brand_match
+타조,1,1,타조,direct_brand_match
+우리차,1,1,우리차,direct_brand_match
+해피테라스,1,1,해피테라스,direct_brand_match
+누미,1,1,누미,direct_brand_match
+푸카,1,1,푸카,direct_brand_match
+에빠니,1,1,에빠니,direct_brand_match
+우리가스토리,1,1,우리가스토리,direct_brand_match
+딜마,1,1,딜마,direct_brand_match
+아름드레,1,1,아름드레,direct_brand_match
+올가홀푸드,1,1,올가홀푸드,direct_brand_match
+티프렌,1,1,티프렌,direct_brand_match
+셀레셜시즈닝스,1,1,셀레셜시즈닝스,direct_brand_match
+아모레퍼시픽,1,1,아모레퍼시픽,direct_brand_match
+티칸네,1,1,티칸네,direct_brand_match
+다하다,1,1,다하다,direct_brand_match
+가나다,1,1,가나다,direct_brand_match
+아레스,1,1,아레스,direct_brand_match
+요기티,1,1,요기티,direct_brand_match
+테틀리,1,1,테틀리,direct_brand_match
+도밍고,1,1,도밍고,direct_brand_match
+오허브,1,1,오허브,direct_brand_match
+다비앙,1,1,다비앙,direct_brand_match
+대본,1,1,대본,direct_brand_match
+푸드올로지,1,1,푸드올로지,direct_brand_match
+제이슨,1,1,제이슨,direct_brand_match
+티앤,1,1,티앤,direct_brand_match
+오클리,1,1,오클리,direct_brand_match
+다예,1,1,다예,direct_brand_match
+JARDIN,1,1,JARDIN,direct_brand_match
+티푸드,1,1,티푸드,direct_brand_match
+담터,1,1,담터,direct_brand_match
+다농원,1,1,다농원,direct_brand_match
+리쉬티,1,1,리쉬티,direct_brand_match
+더하다,1,1,더하다,direct_brand_match
+신선약초,1,1,신선약초,direct_brand_match
+차/티백 계열,2027,1000,"tea bag, teabag, 차, 침출차, 티, 티백",product_category_mapping
+히비스커스 계열,1019,1000,"hibiscus, 하이비스커스, 히비스커스",product_category_mapping
+아이스티/음료 계열,1158,682,"ade, drink, ice tea, iced tea, 아이스티, 에이드, 음료",product_category_mapping
+블렌딩티 계열,485,405,"berry, blend, blending, 로즈힙, 베리, 블렌드, 블렌딩",product_category_mapping
+다이어트/붓기 계열,141,113,"diet, 다이어트, 부기, 붓기, 이너뷰티",product_category_mapping
+허브티 계열,107,102,"herb tea, herbal tea, 허브 티, 허브티",product_category_mapping
+항산화/비타민 계열,143,88,"vitamin, 비타민, 안토시아닌, 항산화",product_category_mapping
+카페인 프리 계열,34,33,"decaf, 논카페인, 무카페인, 카페인 프리, 카페인프리",product_category_mapping

@@ -1,0 +1,45 @@
+﻿brand_candidate,mention_count,post_count,matched_keywords,mapping_type
+네이버,116,116,네이버,direct_brand_match
+알레,60,60,알레,direct_brand_match
+아로마티카,54,18,"Aromatica, aromatica, 아로마티카",direct_brand_match
+AROMATICA,18,18,AROMATICA,direct_brand_match
+도테라,24,16,"doTERRA, doterra, 도테라, 도테라 오일",direct_brand_match
+쿠팡,15,15,쿠팡,direct_brand_match
+레노포프,12,12,레노포프,direct_brand_match
+다이소,10,10,다이소,direct_brand_match
+가든데이즈,7,7,가든데이즈,direct_brand_match
+이솝,11,5,"Aesop, aesop, 이솝",direct_brand_match
+아베다,3,3,아베다,direct_brand_match
+록시땅,3,3,록시땅,direct_brand_match
+세이지,3,3,세이지,direct_brand_match
+나우푸드,4,2,"NOW Foods, now foods, 나우푸드",direct_brand_match
+올바스,2,2,올바스,direct_brand_match
+르에르베,2,2,르에르베,direct_brand_match
+르에르베코리아,2,2,르에르베코리아,direct_brand_match
+무신사,2,2,무신사,direct_brand_match
+SSG닷컴,2,2,SSG닷컴,direct_brand_match
+바르바라,2,2,바르바라,direct_brand_match
+멜로우버디,2,2,멜로우버디,direct_brand_match
+뭉클,2,2,뭉클,direct_brand_match
+사바사나,2,2,사바사나,direct_brand_match
+프라나롬,1,1,프라나롬,direct_brand_match
+다이소몰,1,1,다이소몰,direct_brand_match
+무인양품,1,1,무인양품,direct_brand_match
+MOWM,1,1,MOWM,direct_brand_match
+JUST,1,1,JUST,direct_brand_match
+보타니컬레메디,1,1,보타니컬레메디,direct_brand_match
+맑을담 오가닉,1,1,맑을담 오가닉,direct_brand_match
+세이프케어,1,1,세이프케어,direct_brand_match
+유어바디,1,1,유어바디,direct_brand_match
+에코문,1,1,에코문,direct_brand_match
+앳네이처,1,1,앳네이처,direct_brand_match
+온가드,1,1,온가드,direct_brand_match
+블렌딩 오일 계열,762,558,"릴렉스, 블렌드, 블렌딩, 수면, 숙면, 스트레스",product_category_mapping
+라벤더 계열,143,140,"lavender, 라벤더",product_category_mapping
+레몬 계열,58,55,"lemon, 레몬",product_category_mapping
+페퍼민트 계열,40,39,"peppermint, 페퍼민트",product_category_mapping
+오렌지 계열,40,37,"orange, 스위트오렌지, 오렌지",product_category_mapping
+티트리 계열,34,33,"tea tree, 티트리",product_category_mapping
+유칼립투스 계열,33,32,"eucalyptus, 유칼립투스",product_category_mapping
+로즈마리 계열,19,18,"rosemary, 로즈마리",product_category_mapping
+일랑일랑 계열,15,15,일랑일랑,product_category_mapping
