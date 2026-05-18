@@ -1,166 +1,235 @@
 # AI-Based Emotional Relief Package Optimization
 
-> 재난·질병·응급 상황에서 대학생의 심리적 안정을 지원하기 위한  
-> **LLM 기반 감성지수 분석 및 맞춤형 물품 패키지 추천 시스템**
+<div align="center">
+
+### LLM-Based Emotional Index Analysis for Personalized Relief Kits
+
+**재난·질병·응급 상황에서 대학생의 심리적 안정을 지원하기 위한  
+LLM 기반 감성지수 분석 및 맞춤형 물품 패키지 추천 시스템**
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![LLM](https://img.shields.io/badge/LLM-GPT%20%7C%20Gemini%20%7C%20Qwen-green)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+![Research](https://img.shields.io/badge/Research-Human%20Centered%20AI-red)
+
+</div>
 
 ---
 
-## 1. Project Overview
+## Overview
 
-본 프로젝트는 재난·질병·응급 상황에서 불안, 우울, 공포, 스트레스 등 부정적 감정으로 학업과 일상에 어려움을 겪는 대학생을 지원하기 위해 기획된 연구입니다.
+본 프로젝트는 **재난·질병·응급 상황에서 불안, 우울, 공포, 스트레스 등 부정적 감정으로 학업과 일상에 어려움을 겪는 대학생을 지원하기 위한 AI 기반 심리 안정 물품 추천 시스템** 연구입니다.
 
-기존의 재난 지원 체계가 식량, 의약품, 생필품 등 물리적 지원에 집중했다면, 본 연구는 위기 상황에서 개인의 **심리적 안정** 또한 중요한 지원 요소라고 보고, 사용자의 감정 상태에 맞는 물품 패키지를 추천하는 AI 시스템을 설계합니다.
+기존 재난 지원 체계가 식량, 의약품, 생필품과 같은 **물리적 지원 중심**이었다면, 본 연구는 **심리적 안정(Emotional Stability)** 또한 응급 상황에서 중요한 요소라는 문제의식에서 출발합니다.
 
-본 연구는 거대언어모델(LLM, Large Language Model)을 활용하여 물품 사용 후 기대되는 정신적·심리적 효과를 분석하고, 이를 **감성지수(Emotional Index)** 로 정량화하여 사용자 맞춤형 물품 패키지를 구성하는 것을 목표로 합니다.
+본 연구는 **거대언어모델(LLM, Large Language Model)** 을 활용하여 물품 사용 후 기대되는 정신적·심리적 효과를 분석하고, 이를 **감성지수(Emotional Index)** 로 정량화하여 사용자 맞춤형 물품 패키지를 추천합니다.
 
 ---
 
-## 2. Research Purpose
+## Why This Research?
+
+대학생들은 재난, 질병, 시험 기간, 심리적 위기 상황에서 높은 수준의 스트레스와 불안을 경험할 수 있습니다.
+
+그러나 현재 대부분의 지원은:
+
+- 물리적 건강 중심
+- 일률적인 지원 체계
+- 개인 감정 상태 반영 부족
+
+이라는 한계를 가지고 있습니다.
+
+본 연구는 다음 질문에서 시작되었습니다.
+
+> **“사람마다 심리적으로 도움이 되는 물품이 다르다면, AI가 개인에게 맞는 안정 키트를 추천할 수 있을까?”**
+
+---
+
+## Research Goal
 
 본 연구의 핵심 목적은 다음과 같습니다.
 
-1. 재난·질병·응급 상황에서 대학생의 심리적 안정을 지원하는 물품 패키지 구성
-2. LLM을 활용한 물품별 감성 효과 분석
-3. 사용자 상황에 따른 맞춤형 패키지 추천 시스템 설계
-4. 실제 사용자 평가를 통한 감성지수 분석 결과 검증
-5. 향후 재난 지원, 심리 안정 서비스, 마케팅 분야로의 확장 가능성 탐색
+1. **LLM 기반 물품 감성 효과 분석**
+2. **감성지수(Emotional Index) 정량화**
+3. **사용자 맞춤형 심리 안정 키트 추천**
+4. **실제 대학생 대상 실험 검증**
+5. **재난 지원 및 감성 추천 시스템 확장 가능성 탐색**
 
 ---
 
-## 3. Core Concept
+## Core Concept
 
 ### Emotional Index
 
-감성지수란 사용자가 특정 물품을 사용한 후 느끼는 정신적·심리적 효과를 정량화한 지표입니다.
+감성지수란 사용자가 특정 물품을 사용한 후 경험하는 **정신적·심리적 효과를 정량화한 지표**입니다.
 
-예를 들어, 스트레스볼은 긴장 완화와 불안 감소 효과를 가질 수 있고, 허브티는 안정감과 수면 보조 효과를 제공할 수 있습니다. 본 연구는 이러한 감성 효과를 텍스트 데이터와 LLM 분석을 통해 수치화합니다.
+예를 들어:
 
-|         Item          | Expected Effect |     Emotional Factor     |
-| :-------------------: | :-------------: | :----------------------: |
-|      Stress Ball      |    긴장 완화    | 불안 감소, 스트레스 완화 |
-|       Aroma Oil       |    감각 안정    |    심리 안정, 이완감     |
-|      Herbal Tea       |    진정 효과    |    편안함, 수면 보조     |
-| Positive Message Card |   정서적 지지   |       위로, 희망감       |
-|     Coloring Kit      |    표현 활동    |     몰입, 감정 해소      |
+| Item | Expected Effect | Emotional Factor |
+|:---:|:---:|:---:|
+| Stress Ball | 긴장 완화 | 불안 감소, 스트레스 완화 |
+| Aroma Oil | 감각 안정 | 심리 안정, 이완감 |
+| Herbal Tea | 진정 효과 | 편안함, 수면 보조 |
+| Positive Message Card | 정서적 지지 | 위로, 희망감 |
+| Coloring Kit | 표현 활동 | 몰입, 감정 해소 |
+
+본 연구는 이러한 효과를 **텍스트 데이터 + LLM 분석**을 통해 수치화합니다.
 
 ---
 
-## 4. Research Pipeline
+## System Architecture
 
 ```text
-User / Review Data Collection
-        ↓
-Text Preprocessing
-        ↓
-LLM-Based Sentiment Analysis
-        ↓
-Emotional Index Calculation
-        ↓
-Personalized Package Recommendation
-        ↓
-User Evaluation
-        ↓
-Comparison & Validation
+Naver Blog / Review Data
+              ↓
+      Web Crawling
+              ↓
+      Text Preprocessing
+              ↓
+   LLM Sentiment Analysis
+              ↓
+ Emotional Index Generation
+              ↓
+ Personalized Kit Recommendation
+              ↓
+      User Evaluation
+              ↓
+     Model Validation
 ```
 
 ---
 
-## 5. Methodology
+## Research Pipeline
 
-### 5.1 Data Collection
+### 1. Product Candidate Extraction
 
-물품별 사용자 경험과 감성 반응을 분석하기 위해 온라인 리뷰, 블로그 텍스트, 사용자 평가 데이터를 수집합니다.
+네이버 블로그 리뷰 데이터를 크롤링하여 **심리 안정에 도움을 준다고 언급된 제품 후보군**을 추출합니다.
 
-수집 대상 물품 예시는 다음과 같습니다.
+예시:
 
-- 스트레스볼
-- 긍정 메시지 카드
 - 아로마 오일
+- 스트레스볼
 - 허브티
+- 긍정 카드
 - 루틴 체크 카드
-- 색칠하기 키트
-- 핫팩
-- 위로 메시지 카드
+- 초콜릿
+
+블로그 후기 예시:
+
+> “시험기간에 스트레스 완화에 도움이 되었다.”  
+> “향을 맡으면 마음이 차분해졌다.”
 
 ---
 
-### 5.2 LLM-Based Sentiment Analysis
+### 2. LLM-Based Sentiment Analysis
 
-수집된 텍스트를 LLM을 활용하여 분석합니다.
+수집된 리뷰 데이터를 기반으로 LLM이 감성 효과를 분석합니다.
 
-분석 항목은 다음과 같습니다.
+분석 항목:
 
-- 감정 분류
+- 감정 분류(Label)
 - 심리적 효과 추론
 - 감성 근거 문장 추출
-- 신뢰도 점수 산출
-- 물품별 감성지수 계산
+- 신뢰도 점수 계산
+- 감성지수 생성
 
-예시 출력 구조는 다음과 같습니다.
+Example Output:
 
 ```json
 {
   "item": "aroma_oil",
   "label": "psychological_stability",
   "reason": "사용자가 긴장 완화와 안정감을 반복적으로 언급함",
-  "evidence": [
-    "향을 맡으면 마음이 차분해진다",
-    "시험 기간 스트레스 완화에 도움이 되었다"
-  ],
   "confidence": 0.91
 }
 ```
 
 ---
 
-### 5.3 Package Recommendation
+### 3. Personalized Package Recommendation
 
-사용자의 감정 상태와 물품별 감성지수를 바탕으로 최적의 물품 조합을 추천합니다.
+사용자의 현재 감정 상태를 기반으로 최적의 물품 패키지를 추천합니다.
 
-예시:
+Example:
 
 ```text
-User Type: 시험 스트레스가 높은 대학생
+Input:
+"시험 스트레스가 너무 심해요"
 
 Recommended Package:
-- Stress Ball
-- Chamomile Tea
-- Positive Message Card
-- Aroma Oil
-- Routine Check Card
+✔ Stress Ball
+✔ Chamomile Tea
+✔ Aroma Oil
+✔ Positive Message Card
+✔ Routine Check Card
 ```
 
 ---
 
-## 6. Experiment Design
+### 4. Real-World Validation
 
-본 연구는 실제 일반 대학생 30명을 대상으로 물품 패키지를 제공한 후, 제품별 감성 효과를 평가합니다.
+추천 시스템의 타당성을 검증하기 위해 실제 대학생 대상 실험을 진행합니다.
 
-실험 절차는 다음과 같습니다.
+#### Experimental Procedure
 
 1. 참여자 감정 상태 사전 조사
-2. 맞춤형 물품 패키지 제공
-3. 물품 사용 후 감성 효과 평가
-4. LLM 기반 감성지수 결과와 사용자 평가 비교
-5. 머신러닝 기반 분석 및 검증
+2. 맞춤형 물품 패키지 제작
+3. 대학생 20~30명 대상 배포
+4. 사용 후 설문조사
+5. 실제 감성 효과 평가
+6. LLM 예측 결과와 비교 검증
 
 ---
 
-## 7. Evaluation Metrics
+## Current Progress
 
-본 연구에서는 다음 지표를 활용하여 시스템의 효과를 평가합니다.
+### Completed
 
-|         Metric         |            Description             |
-| :--------------------: | :--------------------------------: |
-|   User Satisfaction    |  추천 패키지에 대한 사용자 만족도  |
-| Emotional Relief Score |       사용 후 심리 안정 효과       |
-|  Prediction Accuracy   | LLM 감성지수와 실제 평가 간 일치도 |
-|  Package Suitability   |  사용자 상황과 추천 물품의 적합성  |
-|      Practicality      |  실제 재난·응급 상황 적용 가능성   |
+- [x] 프로젝트 기획
+- [x] 사이트 구조 설계
+- [x] 제품군 정의
+- [x] 네이버 블로그 크롤링
+- [x] 브랜드 후보군 추출
+- [x] 감성 분석 구조 설계
+
+### In Progress
+
+- [ ] 사이트 개발
+- [ ] 키트 제작
+- [ ] 대학생 대상 배포
+- [ ] 설문조사 진행
+- [ ] 감성지수 검증
+- [ ] 포스터 제작
 
 ---
 
-## 8. Tech Stack
+## Timeline
+
+| Week | Task |
+|---|---|
+| 1주차 (4/29 ~ 5/6) | 사이트 디자인 / 브랜드 추출 |
+| 2주차 (5/6 ~ 5/13) | 프로토타입 제작 / 제품 주문 |
+| 3주차 (5/13 ~ 5/20) | 설문조사 설계 |
+| 4주차 (5/20 ~ 5/27) | 키트 배포 |
+| 5주차 (5/27 ~ 6/3) | 감성 분석 및 모델 개선 |
+| 6주차 (6/3 ~ 6/10) | 기말고사 시즌 |
+| 7주차 (6/10 ~ 6/17) | 결과 분석 |
+| 8주차 (6/17 ~ 6/24) | 발표 및 포스터 제작 |
+
+---
+
+## Evaluation Metrics
+
+| Metric | Description |
+|:---:|:---:|
+| User Satisfaction | 추천 만족도 |
+| Emotional Relief Score | 심리 안정 효과 |
+| Prediction Accuracy | AI 예측 정확도 |
+| Package Suitability | 추천 적합성 |
+| Practicality | 실제 적용 가능성 |
+
+---
+
+## Tech Stack
 
 ### AI / Data Analysis
 
@@ -169,7 +238,7 @@ Recommended Package:
 - NumPy
 - Scikit-learn
 - LLM API
-- Natural Language Processing
+- NLP
 - Sentiment Analysis
 
 ### Data Collection
@@ -177,17 +246,16 @@ Recommended Package:
 - Naver Blog Search API
 - Web Crawling
 - BeautifulSoup
-- CSV Dataset
 
-### Development Environment
+### Environment
 
 - Jupyter Notebook
-- macOS
 - GitHub
+- macOS
 
 ---
 
-## 9. Project Structure
+## Project Structure
 
 ```text
 project-root/
@@ -219,63 +287,55 @@ project-root/
 
 ---
 
-## 10. Research Significance
+## Research Significance
 
-본 연구의 의의는 다음과 같습니다.
+### AI-Based Emotional Support
 
-### 1. AI-Based Emotional Support
+LLM 기반 자연어 처리 기술을 활용하여 심리 안정 지원에 적용합니다.
 
-LLM 기반 자연어 처리 기술을 활용하여 물품의 감성 효과를 분석하고, 심리적 안정 지원에 적용합니다.
+### Personalized Humanitarian Aid
 
-### 2. Personalized Relief Package
+사용자별 맞춤형 심리 안정 키트를 제공합니다.
 
-사용자의 감정 상태와 상황에 따라 맞춤형 물품 패키지를 구성함으로써 응급 상황에서 신속한 의사결정을 지원합니다.
+### Preventive Mental Care
 
-### 3. Preventive Mental Care
+고스트레스군 사용자의 심리 악화를 예방할 수 있습니다.
 
-고스트레스군 사용자의 심리적 악화를 예방하고, 정서적 안정에 도움을 줄 수 있는 보조적 지원 체계를 제안합니다.
+### Industrial Scalability
 
-### 4. Industrial Scalability
+향후 다음 분야로 확장 가능합니다.
 
-본 연구의 방법론은 재난 지원뿐 아니라 웰니스 서비스, 개인화 추천 시스템, 마케팅, 감성 커머스 분야로 확장될 수 있습니다.
-
----
-
-## 11. Future Work
-
-향후 연구 방향은 다음과 같습니다.
-
-- 사용자 감정 상태 기반 실시간 추천 시스템 개발
-- 물품별 감성지수 데이터베이스 구축
-- 대학생 외 다양한 사용자군으로 실험 대상 확장
-- 재난 상황별 패키지 최적화 알고리즘 고도화
-- 텍스트, 설문, 생체신호를 결합한 멀티모달 감정 분석 적용
-
----
-
-## 12. Researcher
-
-**Younghoon Ko**  
-Undergraduate Research Assistant  
-Department of Software Convergence
-
-**김현진**
-Undergraduate Research Assistant  
-Department of Software Convergence
-
-### Research Interests
-
-- Human-Centered AI
-- Natural Language Processing
-- Sentiment Analysis
+- Mental Wellness
+- Emotional Commerce
 - Recommendation Systems
 - Disaster Relief Technology
-- Data Science
 
 ---
 
-## 13. Vision
+## Future Work
 
-> Technology should not only support survival, but also protect emotional stability.
+- 임베딩 기반 추천 시스템 적용
+- 실시간 감정 분석
+- 멀티모달 감정 분석
+- 사용자군 확장
+- 재난 상황별 동적 키트 최적화
 
-본 프로젝트는 AI 기술을 통해 재난·질병·응급 상황에서 인간의 심리적 안정과 존엄을 지원하는 것을 목표로 합니다.
+---
+
+## Researchers
+
+**고영훈 (Younghoon Ko)**  
+Undergraduate Research Assistant  
+Department of Software Convergence
+
+**김현진**  
+Undergraduate Research Assistant  
+Department of Software Convergence
+
+---
+
+## Vision
+
+> **Technology should not only support survival, but also protect emotional stability.**
+
+AI 기술을 통해 재난·질병·응급 상황에서 인간의 심리적 안정과 존엄을 지원하는 것을 목표로 합니다.
